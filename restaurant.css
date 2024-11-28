@@ -1,0 +1,431 @@
+/* General Reset and Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Settings */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #302f2f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3 {
+    color: #333;  /* Set color for all titles */
+    font-weight: bold; /* Ensure titles are bold */
+}
+
+/* Title text with span styling */
+.titleText span {
+    color: #f80000; /* Tomato Red for accent */
+}
+
+/* Header */
+header {
+    background: #070707;
+    color: #ff0000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+header .logo span {
+    color: #ffffff;
+}
+
+header .menuToggle {
+    display: none;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+header .navigation li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header .navigation li a {
+    color: #fff;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+header .navigation li a:hover {
+    background:#e53e3e;
+}
+
+/* Banner Section */
+.banner {
+    background: url('img/bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.banner h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.banner .btn {
+    background-color: #FF6347;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.banner .btn:hover {
+    background-color: #e53e3e;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 50px 100px;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+ .about .col50 h2{
+    font-size: 40px;
+ }
+.about .col50 {
+    width: 50%;
+    padding: 20px;
+}
+.about .col50 p{
+color: #000000;
+}
+.about .titleText {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.about .imgBx img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Menu Section */
+.menu {
+    padding: 50px 0;
+    background: url( img/bg2.jpg); /* Light background for the section */
+}
+
+.menu .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu .title h2 {
+    font-size:40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+ 
+.menu .title h2 span {
+    color: #ff0505; /* Highlight the letter M in 'Menu' */
+}
+
+.menu .title p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Container for menu items */
+.menu .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Style for individual menu boxes */
+.menu .box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu .box:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.menu .box .imgBx {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu .box .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box while maintaining its aspect ratio */
+}
+
+.menu .box .text {
+    padding: 20px;
+}
+
+.menu .box .text h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Button for View All */
+.menu .title .btn {
+    background-color: #FF6347;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+  margin-right: 110px;
+}
+
+.menu .title .btn:hover {
+    background-color:#e53e3e;  
+}
+
+/* Center all buttons */
+.menu .title .btn, .expert .title .btn, .testimonials .title .btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Expert Section */
+.expert {
+    padding: 50px 200px;
+    background-color: #ffffff;
+}
+
+.expert .title {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.expert .title h2{
+    font-size:40px;
+}
+
+
+.expert .title p {
+    color: #000000;
+}
+
+.expert .content {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.expert .box {
+    text-align: center;
+    width: 23%;
+}
+
+.expert .box img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.expert .text h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 100px;
+    background:url(img/bg.jpg);
+}
+
+.testimonials .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.testimonials .title h2{
+    font-size:40px;
+}
+
+.testimonials .title h2 {
+    color: #ffffff;
+}
+.testimonials .title p{
+    color: #ffffff;
+}
+
+.testimonials .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials .box {
+    text-align: center;
+    width:100%;
+}
+
+.testimonials .box .imgBx img {
+    width: 40%;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.testimonials .text p {
+    font-style: italic;
+    color: #ffffff;
+}
+
+.testimonials .text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact {
+    background: url(img/bg3.jpg) no-repeat center center/cover;
+    text-align: center;
+    padding: 50px 0;
+    color: #000000;
+}
+
+.contact .title {
+    text-align: center;
+    margin-bottom:20px;
+}
+.contact .title h2{
+    font-size:40px;
+}
+
+.contact .title h2 {
+    color: #000000;
+}
+
+.ContactForm {
+    max-width: 500px;
+    margin: 0 auto;
+       margin-left: 100px;
+}
+
+.ContactForm .inputBox {
+    margin-bottom: 30px;
+    padding:1px;
+}
+
+.ContactForm input, .ContactForm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.ContactForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+/* Copyright Section */
+.copyrightText {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 14px; /* Sets a smaller font size */
+    color: #777; /* Sets the text color */
+    padding: 20px 0; /* Adds padding above and below the text */
+    background-color: #000000; /* Dark background for contrast */
+}
+
+.copyrightText a {
+    color: #ff6347; /* Color for the link */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.copyrightText a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menuToggle {
+        display: block;
+        background-color: #fff;
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+        transition: all 0.3s;
+    }
+
+    .menuToggle.open {
+        transform: rotate(45deg);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .about, .menu, .expert, .testimonials, .contact {
+        padding: 20px;
+    }
+
+    .about .col50, .menu .box, .expert .box {
+        width: 100%;
+    }
+
+    .menu .box {
+        width: 48%;
+    }
+
+    .testimonials .content {
+        flex-direction: column;
+    }
+}
