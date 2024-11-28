@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Food<span>.</span></a>
+        <div class="menuToggle" onclick="togglemenu()"></div>
+        <ul class="navigation">
+            <li><a href="#home" onclick="togglemenu()">Home</a></li>
+            <li><a href="#about" onclick="togglemenu()">About</a></li>
+            <li><a href="#menu" onclick="togglemenu()">Menu</a></li>
+            <li><a href="#expert" onclick="togglemenu()">Expert</a></li>
+            <li><a href="#testimonials" onclick="togglemenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner" id="banner">
+        <div class="content"></div>
+        <h2>Always Choose Good</h2>
+        <p>where quality meets flavor in every dish we serve</p>
+        <a href="#" class="btn">Our Menu</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>
+                    "Food" is a vibrant and user-friendly restaurant website designed to offer an exceptional online experience for food lovers.</p>
+            </div>
+        </div>
+        <div class="col50">
+            <div class="imgBx">
+                <img src="../ecommerce/img/img1.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Our <span>M</span>enu</h2>
+            <p> "Explore our menu online, featuring a wide range of delectable dishes, from appetizers to desserts, all available at your fingertips."</p>
+        </div>
+        <div class="content">
+            <!-- Menu Item Boxes -->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/menu1.jpg" alt="Special Salads">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+            </div>
+            <!-- More Menu Items -->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/menu2.jpg" alt="Special Soup">
+                </div>
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/menu3.jpg" alt="Special Pasta">
+                </div>
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/menu4.jpg" alt="Special Pasta">
+                </div>
+                <div class="text">
+                    <h3>Special Veg Pasta</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/menu5.jpg" alt="Special Pasta">
+                </div>
+                <div class="text">
+                    <h3>Special Veg soup</h3>
+                </div>
+            </div>
+            <!-- More items can follow... -->
+
+            <div class="title">
+                <a href="#" class="btn">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Section -->
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">Our Kitchen <span>M</span>enu</h2>
+            <p>"Meet our kitchen experts, a talented team dedicated to crafting exceptional dishes with passion and precision."</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/expert1.jpg" alt="Sam Doe">
+                </div>
+                <div class="text">
+                    <h3>Sam Doe</h3>
+                </div>
+            </div>
+            <!-- Repeat Expert Boxes -->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/expert2.jpg" alt="Peter">
+                </div>
+                <div class="text">
+                    <h3>Peter</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/expert3.jpg" alt="Jane">
+                </div>
+                <div class="text">
+                    <h3>Jane</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">They <span>S</span>aid About Us</h2>
+            <p>"Here's what our customers have to say about their unforgettable dining experience with us."</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/testi1.jpg" alt="Cena">
+                </div>
+                <div class="text">
+                    <p>
+                        "Absolutely delicious! The food was fresh, flavorful, and the service was exceptional. Highly recommend!"</p>
+                    <h3>Cena</h3>
+                </div>
+            </div>
+            <!-- Repeat Testimonials -->
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/testi2.jpg" alt="Jack Thomas">
+                </div>
+                <div class="text">
+                    <p>"An unforgettable dining experience! The ambiance, the menu, and the staff were all top-notch. Will definitely be back!"</p>
+                    <h3>Jack Thomas</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/testi3.jpg" alt="Soozie Mie">
+                </div>
+                <div class="text">
+                    <p>"Absolutely loved the food! Fresh, flavorful, and beautifully presented. Highly recommend!"</p>
+                    <h3>Soozie Mie</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p> "Get in touch with us for inquiries, reservations, or feedback – we’d love to hear from you!"</p>
+        </div>
+        <div class="ContactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="inputBox">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message..." required></textarea>
+            </div>
+        </div>
+    </section>
+    <div class="copyrightText">
+		<p>Copyright 2020 <a href="#">chrisiman</a>. All Rights Reserved.</p>
+	</div>
+
+</body>
+</html>
